@@ -59,9 +59,43 @@ git config --global user.email "seu@email.aqui"
   - Com o servidor criado, é necessário que o nosso repositório tenha acesso ao servidor para que ele possa compartilhar as informações contidas nele ou mesmo trazer as informações contidas no servidor, e para isso utilizamos o comando "git remote add nomeServidor caminho/do/servidor". Lembrando que o caminho do servidor pode ser um pathway, uma url ou qualquer caminho que possa ser conhecido pelo computador.
 
   - Caso o usuário, sem repositório criado, queira tão somente clonar o servidor para que possa trabalhar a partir do estado que ele se econtra, basta utilizar o comando "git clone cominho/do/servidor".
-  
 
-  
+  8. Sincronizando Dados
+
+  - Para enviar os dados que foram commitados para o servidor que foi devidamente setado, deverá ser realizado o comando "git push", mas para que o git entenda para onde está sendo enviado, é preciso utilizar, inicialmente, o comando "git push nomeRepositorioServidor nomeBranch".
+
+  - Caso seja necessário trazer informações do servidor para o repositório local, o comando a ser utilizado é o "git pull".
+
+  9. GitHub
+
+  - Caso o usuário não queira ter um repositório na maquina local, é possível fazer uso de um servidor remoto online.
+  - O github é um dos serviços mais comuns que permitem as criação de repositórios remotos online.
+
+  10. Branches
+
+  - Com a finalidade de melhor organizar os trabalhos, é possível realizar a criação de branchs diferentes para que, para cada branch, seja possível atribuír uma atividade ou um setor do projeto que está sendo manipulado.
+
+  Exemplo: caso a pagina de um site em html esteja sendo manipulado e na divisão de terefas alguém ficou designado a cuidar do título e outro alguém deverá cuidar do corpo do site.
+  Então é possível criar uma branch para tratar do título e outra para tratar do corpo.
+
+  - O comando utilizado para criação da branch é o "git branch nomeDaBranch" e para entrar na branch criada, é utilizado o comando "git checkout nomeDaBranch".
+
+  - Para criar uma nova branch e no mesmo comando o usuário já entrar na nova branch que está sendo criada, é possivel utilizar o comando "git checkout -b nomeDaBranch".
+
+  11. Unindo Brenchs
+
+  - Caso o usuário tenha criado branchs diferentes para realizar trabalhos em setores diferentes ou ativididades diferente e ao finao dessas atividade ele deseje reunir as branchs em uma só, é necessário que seja realizado um "merge".
+
+  - Para executar o merge do seu repositório local, o usuário vai retornar a branch principal e irá executar o comando "git merge nomeDaBranchAlternativa", realizando um commit de merge.
+
+12. Atualizando a Branch
+
+- Caso o usuário tenha a intençao de atualizar a branch com os comites da branch paralela, é possível fazer uso do "rebase", sendo trazidos os commites da outra branch para a branch desejada.
+
+- Da branch principal, o usuário irá utilizar o código "git rebase nomeDaBranchAlternativa" e os commiter da branch alternativa serão trazidos para a branch principal.
+
+
+
 
 
 
