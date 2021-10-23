@@ -14,6 +14,12 @@
 git config --local user.name "Seu nome aqui"
 git config --local user.email "seu@email.aqui"
 
+ou caso queira setar as informaçoes para todos os projetos de uma maquina...
+
+git config --global user.name "Seu nome aqui"
+git config --global user.email "seu@email.aqui"
+
+
  3. Repositórios
 
  - Para que seja trabalhado com o controle de versionamento, o ideal é que o usuário tenha um repositório local na sua maquina, para que possa trabalhar livremente com os arquivos desejados.
@@ -29,5 +35,24 @@ git config --local user.email "seu@email.aqui"
   - Para maiores informações sobre os status no git, é sugerida a leitura do seguinte texto:
 
   https://git-scm.com/book/pt-br/v2/Fundamentos-de-Git-Gravando-Altera%C3%A7%C3%B5es-em-Seu-Reposit%C3%B3rio
+
+  5. Vendo histórico
+
+  -  Para visualizar o histórico de commits existentes em seu código, basta utilizar o comando "git log" e serão exibidas informações de commits.
+
+  - Para o log trazer menos informações "git log --oneline"
+
+  - Com o comando "git log -p" é possível ver as informações dos commits de forma mais detalhada.
+
+  - Para mais exemplos simples de histórico, recomendo a leitura do seguinte texto:
+
+  https://devhints.io/git-log
+
+  6. Ignorando arquivos
+
+  - Para evitar que o git monitore arquivos indesejáveis, é possível criar um arquivo chamado ".gitignore" e nele irá conter o nome de todos os arquivos que o git não deve monitorar, como por exemplo, arquivos de configuração da IDE.
+
+
+
 
   
