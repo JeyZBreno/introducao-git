@@ -71,7 +71,14 @@ git config --global user.email "seu@email.aqui"
   - Caso o usuário não queira ter um repositório na maquina local, é possível fazer uso de um servidor remoto online.
   - O github é um dos serviços mais comuns que permitem as criação de repositórios remotos online.
 
-  
+  10. Branches
+
+  - Com a finalidade de melhor organizar os trabalhos, é possível realizar a criação de branchs diferentes para que, para cada branch, seja possível atribuír uma atividade ou um setor do projeto que está sendo manipulado.
+
+  Exemplo: caso a pagina de um site em html esteja sendo manipulado e na divisão de terefas alguém ficou designado a cuidar do título e outro alguém deverá cuidar do corpo do site.
+  Então é possível criar uma branch para tratar do título e outra para tratar do corpo.
+
+  - O comando utilizado para criação da branch é o "git branch nomeDaBranch" e para entrar na branch criada, é utilizado o comando "git checkout nomeDaBranch".
 
 
 
