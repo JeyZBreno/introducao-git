@@ -66,6 +66,11 @@ git config --global user.email "seu@email.aqui"
 
   - Caso seja necessário trazer informações do servidor para o repositório local, o comando a ser utilizado é o "git pull".
 
+  9. GitHub
+
+  - Caso o usuário não queira ter um repositório na maquina local, é possível fazer uso de um servidor remoto online.
+  - O github é um dos serviços mais comuns que permitem as criação de repositórios remotos online.
+
   
 
 
