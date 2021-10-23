@@ -1,0 +1,33 @@
+1. Para que serve o git?
+
+ - O git nada mais é do que um controle de versão.
+ - Ele parmite que seja mantido uma cópia do projeto online que irá receber as atualizações dos repostórios remotos, permitindo que as modificações no projeto sejam compartilhadas com diversos membros de uma equipe.
+
+ 2. Istalação
+
+ - Caso a máquina não tenho o git instalado, deverá ser executado o procedimento de instalação do mesmo através do site que pode ser facilmente encontrado em qualquer motor de pesquisa.
+
+ - Uma vez o git instalado, é preciso informar quem é o usuário, pois será essencial para apontar quem está realizando os commits.
+
+ - No prompt ou no git bash deverão ser inseridos os seguintes comandos:
+
+git config --local user.name "Seu nome aqui"
+git config --local user.email "seu@email.aqui"
+
+ 3. Repositórios
+
+ - Para que seja trabalhado com o controle de versionamento, o ideal é que o usuário tenha um repositório local na sua maquina, para que possa trabalhar livremente com os arquivos desejados.
+ - Para inicializar um repositório local, o usuário irá escolher o local(pasta) que será utilizada para receber os arquivos que serão versionados e nela, através do promt de comando ou através do git bash, irá utiliar o comando "git init" e assim será exibida uma mensagem informando que o repositório local foi inicializado.
+ - Por padrão o git irá criar um repositório com uma branch denominada master, mas caso o usuário queira alterar o nome o nome da branch, basta utilizar o comando "git branch -m numeBranchAtual nomeBranchNova".
+
+ 4. Salvando alterações
+
+  - Uma vez que seja editados arquivos que encontram-se dentro da pasta contentora do repositório, é preciso que o git passe a trackea-los a fim de que as modificações passem a ser de conhecimento do git e assim possa realizar os commit.
+
+  - Para trackear os arquivos, o comando necessário é o "git add nomeDoArquivo" para selecionar apenas um arquivo, "git add nomeAqruivoUM nomeArquivoDois" para adicionar mais de um arquivo e "git add ." para adicionar todos os arquivos na pasta.
+
+  - Para maiores informações sobre os status no git, é sugerida a leitura do seguinte texto:
+
+  https://git-scm.com/book/pt-br/v2/Fundamentos-de-Git-Gravando-Altera%C3%A7%C3%B5es-em-Seu-Reposit%C3%B3rio
+
+  
