@@ -80,6 +80,8 @@ git config --global user.email "seu@email.aqui"
 
   - O comando utilizado para criação da branch é o "git branch nomeDaBranch" e para entrar na branch criada, é utilizado o comando "git checkout nomeDaBranch".
 
+  - Para criar uma nova branch e no mesmo comando o usuário já entrar na nova branch que está sendo criada, é possivel utilizar o comando "git branch -b nomeDaBranch".
+
 
 
 
