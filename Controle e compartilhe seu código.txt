@@ -82,6 +82,13 @@ git config --global user.email "seu@email.aqui"
 
   - Para criar uma nova branch e no mesmo comando o usuário já entrar na nova branch que está sendo criada, é possivel utilizar o comando "git branch -b nomeDaBranch".
 
+  11. Unindo Brenchs
+
+  - Caso o usuário tenha criado branchs diferentes para realizar trabalhos em setores diferentes ou ativididades diferente e ao finao dessas atividade ele deseje reunir as branchs em uma só, é necessário que seja realizado um "merge".
+
+  - Para executar o merge do seu repositório local, o usuário vai retornar a branch principal e irá executar o comando "git merge nomeDaBranchAlternativa".
+  
+
 
 
 
