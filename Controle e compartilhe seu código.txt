@@ -86,8 +86,16 @@ git config --global user.email "seu@email.aqui"
 
   - Caso o usuário tenha criado branchs diferentes para realizar trabalhos em setores diferentes ou ativididades diferente e ao finao dessas atividade ele deseje reunir as branchs em uma só, é necessário que seja realizado um "merge".
 
-  - Para executar o merge do seu repositório local, o usuário vai retornar a branch principal e irá executar o comando "git merge nomeDaBranchAlternativa".
-  
+  - Para executar o merge do seu repositório local, o usuário vai retornar a branch principal e irá executar o comando "git merge nomeDaBranchAlternativa", realizando um commit de merge.
+
+12. Atualizando a Branch
+
+- Caso o usuário tenha a intençao de atualizar a branch com os comites da branch paralela, é possível fazer uso do "rebase", sendo trazidos os commites da outra branch para a branch desejada.
+
+- Da branch principal, o usuário irá utilizar o código "git rebase nomeDaBranchAlternativa" e os commiter da branch alternativa serão trazidos para a branch principal.
+
+
+
 
 
 
