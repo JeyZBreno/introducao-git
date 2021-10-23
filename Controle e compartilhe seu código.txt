@@ -52,6 +52,17 @@ git config --global user.email "seu@email.aqui"
 
   - Para evitar que o git monitore arquivos indesejáveis, é possível criar um arquivo chamado ".gitignore" e nele irá conter o nome de todos os arquivos que o git não deve monitorar, como por exemplo, arquivos de configuração da IDE.
 
+  7. Repositório Remoto
+
+  - para a criação de um repositório na máquina que será utilizado como servidor, é preciso inicializar o repositório com o comando  "git init --bare", com esse comando será inicializado um repositório que, em tese, não será possível realizar alterações com facilidade.
+
+  - Com o servidor criado, é necessário que o nosso repositório tenha acesso ao servidor para que ele possa compartilhar as informações contidas nele ou mesmo trazer as informações contidas no servidor, e para isso utilizamos o comando "git remote add nomeServidor caminho/do/servidor". Lembrando que o caminho do servidor pode ser um pathway, uma url ou qualquer caminho que possa ser conhecido pelo computador.
+
+  - Caso o usuário, sem repositório criado, queira tão somente clonar o servidor para que possa trabalhar a partir do estado que ele se econtra, basta utilizar o comando "git clone cominho/do/servidor".
+  
+
+  
+
 
 
 
