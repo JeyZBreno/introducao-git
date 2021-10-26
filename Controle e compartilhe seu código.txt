@@ -73,7 +73,7 @@ git config --global user.email "seu@email.aqui"
 
   10. Branches
 
-  - Com a finalidade de melhor organizar os trabalhos, é possível realizar a criação de branchs diferentes para que, para cada branch, seja possível atribuír uma atividade ou um setor do projeto que está sendo manipulado.
+  - Com a finalidade de melhor organizar os trabalhos, é possível realizar a criação de branches diferentes para que, para cada branch, seja possível atribuír uma atividade ou um setor do projeto que está sendo manipulado.
 
   Exemplo: caso a pagina de um site em html esteja sendo manipulado e na divisão de terefas alguém ficou designado a cuidar do título e outro alguém deverá cuidar do corpo do site.
   Então é possível criar uma branch para tratar do título e outra para tratar do corpo.
@@ -84,7 +84,7 @@ git config --global user.email "seu@email.aqui"
 
   11. Unindo Brenchs
 
-  - Caso o usuário tenha criado branchs diferentes para realizar trabalhos em setores diferentes ou ativididades diferente e ao finao dessas atividade ele deseje reunir as branchs em uma só, é necessário que seja realizado um "merge".
+  - Caso o usuário tenha criado branches diferentes para realizar trabalhos em setores diferentes ou ativididades diferente e ao finao dessas atividade ele deseje reunir as branches em uma só, é necessário que seja realizado um "merge".
 
   - Para executar o merge do seu repositório local, o usuário vai retornar a branch principal e irá executar o comando "git merge nomeDaBranchAlternativa", realizando um commit de merge.
 
@@ -119,3 +119,11 @@ git config --global user.email "seu@email.aqui"
 - Através desse comando é possível realizar commits experimentais sem que haja interferência no projeto original.
 
 - Para que as alterações sejam validadas e incrementadas no projeto, é preciso criar uma nova branch a partir daquele hash e realizar o "merge" ou o "rebase".
+
+16. Vendo alterações
+
+- No git, é possível visualizar a diferença entra um ou mais commits através do comando "git diff commitInicia..commitFinal", com isso, é possível comparar as alterações ocorridas no código.
+
+- Caso o usuário utilize tão somente o "git diff", o git irá apresentar as alterações que estão sendo realizadas no momento e que ainda não foi commitado para o que já foi commitado.
+
+- Além de ser possível verificar a diferença entre commits, também é possível analisar branches.
