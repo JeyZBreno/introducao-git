@@ -96,12 +96,20 @@ git config --global user.email "seu@email.aqui"
 
 13. Ctrl + Z
 
-- Através do Github é possível descartar as alterações realizadas no projeto, sendo realizado, a grosso modo, um Ctrl + Z daquelas alterações. Para isso, quando houverem alterações disponiveis para serem commitadas(em vermelhor), é possível utilizar o comando "git checkout -- nomeDoArquivo" e então as alterações serão apagadas e o arquivo retornará ao estado anterior.
+- Através do Git é possível descartar as alterações realizadas no projeto, sendo realizado, a grosso modo, um Ctrl + Z daquelas alterações. Para isso, quando houverem alterações disponiveis para serem commitadas(em vermelhor), é possível utilizar o comando "git checkout -- nomeDoArquivo" e então as alterações serão apagadas e o arquivo retornará ao estado anterior.
 
 - Ainda, mesmo que o estado do arquivo tenha sido alterado, através do "git add", é possível trazer àquele arquivo de volta ao estado "unstage", utilizando o comando "git reset HEAD nomeDoAqruivo".
 
 - Por fim, imaginando que a alteração já tenha sido adicionada e commitada, para reverter esse commit, é possível utilizar o comando "git revert hashCommit". COnforme já dito anteriormente, é possível visualizar os hashs dos commits utilizando o comando "git log".
 
+14. Guardando para depois
 
+- Caso seja necessário salvar alterações em seu projeto para que eventualmente trabalhadar depois, o git possibilita guardar essas informações através do comando "git stash".
+
+- Para verificar o que foi salvo, pode ser usado o "git stash list" e será apresentado ao usuário uma lista com informações que foram gravadas anteriormente.
+
+- Para que as respectivas alterações sejam aplicadas, o comando a ser utilizado é o "git stash apply numeroDaStash" e uma vez aplicada a stash ao projeto, é possivel apagar a stash utilizando o "git stash drop".
+
+- Também pode ser utilizado o "git stash pop" para adicionar a ultima stash ao cógigo e ao mesmo tempo a stash será apagada do local de cópia.
 
   
