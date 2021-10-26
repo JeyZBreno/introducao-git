@@ -127,3 +127,11 @@ git config --global user.email "seu@email.aqui"
 - Caso o usuário utilize tão somente o "git diff", o git irá apresentar as alterações que estão sendo realizadas no momento e que ainda não foi commitado para o que já foi commitado.
 
 - Além de ser possível verificar a diferença entre commits, também é possível analisar branches.
+
+17. Tags e releases
+
+- No git é possível fazer o uso de tags, tags quando atribuídas geram um ponto de inflexão, irá criar uma versão do projeto que sejá inalterável para que funcione como um checkpoint.
+
+- Para criar uma tag, é utilizado o comando "git tag -a nomeVersao" é junto a tag poderá ser lançada uma mensagem colocando "-m "mensagem"" ao final da tag.
+
+- Por fim, é possível enviar a tag para o GitHub, onde, uma vez que seja realizado o push da tag, será criado um "release" no GitHub e será possível baixar o projeto no estado em que se encontrava naquela tag. 
