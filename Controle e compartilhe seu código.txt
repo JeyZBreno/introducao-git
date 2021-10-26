@@ -112,4 +112,10 @@ git config --global user.email "seu@email.aqui"
 
 - Também pode ser utilizado o "git stash pop" para adicionar a ultima stash ao cógigo e ao mesmo tempo a stash será apagada do local de cópia.
 
-  
+15. Viajando no tempo
+
+- Caso o usuário deseje ir para um determinado ponto do projeto basta utilizar o comando "git checkout commitHash", assim o projeto irá retornar para aquele estágio, porém totalmente desanexado do principal.
+
+- Através desse comando é possível realizar commits experimentais sem que haja interferência no projeto original.
+
+- Para que as alterações sejam validadas e incrementadas no projeto, é preciso criar uma nova branch a partir daquele hash e realizar o "merge" ou o "rebase".
