@@ -94,9 +94,13 @@ git config --global user.email "seu@email.aqui"
 
 - Da branch principal, o usuário irá utilizar o código "git rebase nomeDaBranchAlternativa" e os commiter da branch alternativa serão trazidos para a branch principal.
 
+13. Ctrl + Z
 
+- Através do Github é possível descartar as alterações realizadas no projeto, sendo realizado, a grosso modo, um Ctrl + Z daquelas alterações. Para isso, quando houverem alterações disponiveis para serem commitadas(em vermelhor), é possível utilizar o comando "git checkout -- nomeDoArquivo" e então as alterações serão apagadas e o arquivo retornará ao estado anterior.
 
+- Ainda, mesmo que o estado do arquivo tenha sido alterado, através do "git add", é possível trazer àquele arquivo de volta ao estado "unstage", utilizando o comando "git reset HEAD nomeDoAqruivo".
 
+- Por fim, imaginando que a alteração já tenha sido adicionada e commitada, para reverter esse commit, é possível utilizar o comando "git revert hashCommit". COnforme já dito anteriormente, é possível visualizar os hashs dos commits utilizando o comando "git log".
 
 
 
