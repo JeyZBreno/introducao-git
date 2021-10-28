@@ -1,0 +1,13 @@
+1. Unindo Commit
+
+- Caso chegue um momento que ao analisar o número de commits o usuário decida que o gestor poderá ter trabalho demais analisando os commits e poderia resumir alguns commits em um único, o git possibilita esta união utilizando o comando "git rebase -i intervaloDeCommits".
+
+- git rebase -i intervaloCammits
+
+2. Pegando um commit
+
+- Caso o usuário esteja trabalhando funçoes ou realizando atividades em branches separadas para melhor gerir o código e então desejar trazer um commit para a branche atual, basta utilizar o comando "git cherry-pick hashDesejada", então o commit escolhido será trazido para sua branch atual.
+
+- git cherry-pick hashDesejada
+
+3. 
