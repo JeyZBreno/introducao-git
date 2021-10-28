@@ -10,4 +10,26 @@
 
 - git cherry-pick hashDesejada
 
-3. 
+3. Encontrando bugs
+
+- Caso o usuário deseje encontrar um commit que esteja causando um problema conhecido, mas não seja capaz de identificar que commit ocasiou aquilo para que possa desfaze-lo, o git possibilita que o usuário aponte em que ponto o código está "ruim" e onde ele estava "bom" e faça uma busca para identificar qual commit estaria gerando o suposto problema através do comando "git bisect".
+
+- O usuário irá iniciar o bisect com o comando "git bisect start" e irá apontar o commit que apresenta problema, normalmente o commit atual utilizando o "git bisect bad commitRuim" e em seguida passa como parametro um commit em que o problema não existia "git bisect commitBom".
+
+- Então o git irá apresentar commits que que ele considera que pode ter trazido o problema, então o usuário irá dizer se o commit está bom ou ruim com  "git bisect good" ou "git bisect bad".
+
+- Uma vez encontrado o "bug", de posse do hash, é possível reverte-lo. Para encerrar o bisect é possível utilizar o comando "git bisect reset".
+
+
+- git bisect start
+- git bisect bad hash
+- git bisect good hash
+- git bisect ba
+- git bisect good
+- git bisect reset
+
+4. Encontrando o culpado
+
+- Para encontrar, no projeto, o usuário que fez alguma alteração no projeto, é possível utilizar o comando "git blame" e ele irá apontar o responsável que criou cada linha do arquivo.
+
+- git blame arquivo
