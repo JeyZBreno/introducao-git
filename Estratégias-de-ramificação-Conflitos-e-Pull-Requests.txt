@@ -33,3 +33,8 @@
 - Para encontrar, no projeto, o usuário que fez alguma alteração no projeto, é possível utilizar o comando "git blame" e ele irá apontar o responsável que criou cada linha do arquivo.
 
 - git blame arquivo
+
+5. Eventos git(hooks)
+
+- O usuário pode realizar a criação de hooks para incluir comandos no git a fim de automatizar alguma ação ou incluir mensagens no repositório condicionando a um evento.
+
